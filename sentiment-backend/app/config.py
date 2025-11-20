@@ -4,9 +4,9 @@ import os
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '.env'), env_file_encoding='utf-8')
 
-    HF_API_KEY: str
+    HF_API_KEY: str 
     HF_MODEL: str = "nlptown/bert-base-multilingual-uncased-sentiment"
-    HF_API_BASE_URL: str = "https://api-inference.huggingface.co/models"
+    HF_API_URL: str = "https://router.huggingface.co/hf-inference/models/nlptown/bert-base-multilingual-uncased-sentiment"
 
     SECRET_KEY: str
     ALGORITHM: str = "HS256"

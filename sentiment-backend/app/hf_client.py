@@ -2,7 +2,7 @@ import httpx
 from .config import settings
 
 async def query_sentiment_model(text: str):
-    api_url = f"{settings.HF_API_BASE_URL}/{settings.HF_MODEL}"
+    api_url = settings.HF_API_URL
     headers = {"Authorization": f"Bearer {settings.HF_API_KEY}"}
     payload = {"inputs": text}
 
