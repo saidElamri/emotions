@@ -1,0 +1,7 @@
+node_modules/
+sentiment-frontend/node_modules/
+sentiment-frontend/.next/
+sentiment-frontend/src/app/generated-tailwind.css
+sentiment-backend/__pycache__/
+.DS_Store
+*.log

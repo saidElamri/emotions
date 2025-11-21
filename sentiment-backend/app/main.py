@@ -1,5 +1,6 @@
 import httpx
 from fastapi import FastAPI, Depends, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from datetime import timedelta
 
 from . import auth, schemas, hf_client
@@ -9,6 +10,37 @@ app = FastAPI(
     title="Sentiment Analysis API",
     description="A simple API to analyze the sentiment of a given text using a Hugging Face model.",
     version="1.0.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:3001",
+        "http://localhost:3002",
+        "http://localhost:3003",
+        "http://localhost:3004",
+        "http://localhost:3005",
+        "http://localhost:3006",
+        "http://localhost:3007",
+        "http://localhost:3008",
+        "http://localhost:3009",
+        "http://localhost:3010",
+        "http://127.0.0.1:3000",
+        "http://127.0.0.1:3001",
+        "http://127.0.0.1:3002",
+        "http://127.0.0.1:3003",
+        "http://127.0.0.1:3004",
+        "http://127.0.0.1:3005",
+        "http://127.0.0.1:3006",
+        "http://127.0.0.1:3007",
+        "http://127.0.0.1:3008",
+        "http://127.0.0.1:3009",
+        "http://127.0.0.1:3010",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # This is a dummy user database

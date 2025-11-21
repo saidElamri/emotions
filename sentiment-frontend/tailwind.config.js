@@ -1,0 +1,36 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+        "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    safelist: [
+        'w-6', 'h-6', 'w-8', 'h-8', 'w-10', 'h-10', 'w-16', 'h-16', 'w-20', 'h-20',
+        'w-full', 'max-w-md', 'max-w-6xl',
+        'text-purple-600', 'text-purple-100', 'text-purple-700',
+        'bg-white', 'bg-purple-50',
+        'rounded-lg', 'rounded-xl', 'rounded-2xl', 'rounded-3xl', 'rounded-full',
+        'shadow-md', 'shadow-lg', 'shadow-2xl',
+        'border', 'border-t', 'border-gray-200', 'border-gray-300',
+        'p-4', 'px-3', 'px-4', 'px-6', 'py-1', 'py-1.5', 'py-2', 'py-3', 'pt-6',
+        'mb-2', 'mb-3', 'mb-4', 'mb-6', 'mt-1', 'mt-2', 'mt-4', 'mt-5', 'mt-6',
+        'gap-2', 'gap-3', 'gap-4',
+        'text-sm', 'text-lg', 'text-xl', 'text-2xl', 'text-3xl', 'text-4xl', 'text-5xl',
+        'font-medium', 'font-semibold', 'font-bold', 'font-mono',
+        'flex', 'inline-flex', 'grid', 'items-center', 'justify-center', 'justify-between',
+        'space-y-3', 'space-y-5', 'space-y-6',
+        'min-h-screen', 'relative', 'absolute',
+        'transition-all', 'duration-200', 'duration-300',
+        'hover:bg-white/30', 'hover:shadow-md', 'hover:shadow-lg',
+        'focus:ring-2', 'focus:ring-blue-500', 'focus:border-transparent',
+        'disabled:opacity-50', 'disabled:cursor-not-allowed',
+        'text-gray-500', 'text-gray-600', 'text-gray-700', 'text-gray-900',
+        'bg-gray-50', 'bg-gray-100',
+        'animate-spin', 'animate-fade-in',
+        'line-clamp-2', 'resize-none', 'outline-none',
+        'drop-shadow-lg',
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+};
