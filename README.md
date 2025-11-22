@@ -702,29 +702,6 @@ Contributions are welcome! Please follow these steps:
 
 This project is for **educational purposes**.
 
----
 
-## 🙏 Acknowledgments
-
-- [Hugging Face](https://huggingface.co/) for the sentiment analysis model
-- [FastAPI](https://fastapi.tiangolo.com/) for the excellent Python framework
-- [Next.js](https://nextjs.org/) for the React framework
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-
----
-
-## 📞 Support
-
-If you encounter any issues:
-
-1. Check the [Troubleshooting](#-troubleshooting) section
-2. Search [existing issues](https://github.com/saidElamri/emotions/issues)
-3. Open a [new issue](https://github.com/saidElamri/emotions/issues/new) with:
-   - Detailed description
-   - Steps to reproduce
-   - Error messages/logs
-   - Environment info (OS, Docker version, etc.)
-
----
 
 **Happy Analyzing! 🎭✨**
